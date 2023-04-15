@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,7 @@
 
     <form method="post" action="input.php">
       <label for="input">Please Enter a Song That You Would Like to Visualize: </label>
-      <input type="text" id="input" name="input"><br><br>
+      <input type="text" id="input" name="input" required><br><br>
       
       <input type="submit" value="Submit">
     </form>
@@ -40,3 +41,112 @@
 
   </body>
 </html>
+-->
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <style media="screen">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia;
+      background-image: url(../vlimg.jpeg);
+      background-size: cover;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 800px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .box h2 {
+      margin: 0 0 30px;
+      padding: 0px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .box .input-box {
+      position: relative;
+    }
+
+    .box .input-box input {
+      width: 100%;
+      padding: 10px 0px;
+      font-size: 10px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      border: none;
+      outline: none;
+      background: transparent;
+      border-bottom: 1px solid #fff;
+    }
+
+    .box .input-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      letter-spacing: 1px;
+      padding: 10px 0px;
+      font-size: 16px;
+      color: #fff;
+      transition: .5s;
+    }
+
+    .box .input-box input:focus~label1,
+    .box .input-box input:valid~label1 {
+      top: -10px;
+      left: 0px;
+      color: #03a9f4;
+      font-size: 12px;
+    }
+
+    .box input[type='submit'] {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #227be3;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .box input[type='submit']:hover {
+      background-color: #3067b9;
+    }
+  </style>
+  <title>Visualizing Lyrics</title>
+</head>
+
+<body>
+  <h1>Visualize the Sound: A Hackathon Project for Music Image Generation</h1>
+  <p>Welcome to our hackathon project where we explore the intersection of music and visual art. Our project aims to create an image generator that translates musical elements into visual representations for visual learners.</p>
+  <div class="box">
+    <h2>Enter a song that you would like us to visualize</h2>
+    <form action="">
+      <div class="input-box">
+        <input type="text" autocomplete="off" required>
+        <label for="">Song name</label>
+      </div>
+      <input type="submit" value="Enter">
+    </form>
+  </div>
+</body>
+
+</html>
+<?php
+?>
