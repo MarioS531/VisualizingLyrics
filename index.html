@@ -143,12 +143,12 @@
 
 <body>
   <div class="box">
-    <h1>Visualize the Sound: A Hackathon Project for Music Image Generation</h1>
+    <h1>Visualizing Lyrics: A Hackathon Project for Music Image Generation</h1>
     <h2>Enter a song that you would like us to visualize</h2>
-    <form action="">
+    <form method="post" action="/VisualizingLyrics/input.php">
       <div class="input-box">
-        <input type="text" autocomplete="off" required>
-        <label for="">Song name</label>
+        <input name="songname" type="text" autocomplete="off" required>
+        <label for="songname">Song name</label>
       </div>
       <input type="submit" value="Enter">
     </form>
