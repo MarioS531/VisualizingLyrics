@@ -85,7 +85,7 @@
     .box .input-box input {
       width: 100%;
       padding: 10px 0px;
-      font-size: 10px;
+      font-size: 16px;
       color: #fff;
       letter-spacing: 1px;
       margin-bottom: 30px;
@@ -103,11 +103,12 @@
       padding: 10px 0px;
       font-size: 16px;
       color: #fff;
-      transition: .5s;
+      transition: .05s;
+      pointer-events: none;
     }
 
-    .box .input-box input:focus~label1,
-    .box .input-box input:valid~label1 {
+    .box .input-box input:focus ~ label,
+    .box .input-box input:valid ~ label {
       top: -10px;
       left: 0px;
       color: #03a9f4;
